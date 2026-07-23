@@ -1,0 +1,44 @@
+{
+  "protocol": "SheeG",
+  "outputRoot": "sessions",
+  "python": {
+    "envVar": "SHEEG_PYTHON",
+    "exeMac": ".venv/bin/python",
+    "exeWin": ".venv\\Scripts\\python.exe"
+  },
+  "lsl": {
+    "expectedMarkerStreamName": "Markers",
+    "expectedEegStreamName": "CGX EEG",
+    "streamWaitSec": 30
+  },
+  "windows": {
+    "enableStartCgx": true,
+    "cgxExeEnvVar": "CGX_EXE_PATH",
+    "cgxExePath": "",
+    "cgxExeCandidates": [
+      "C:\\Program Files (x86)\\CGX, LLC\\CGX Acquisition\\CGX Acquisition.exe",
+      "C:\\Program Files\\CGX, LLC\\CGX Acquisition\\CGX Acquisition.exe"
+    ],
+    "preRollSec": 10,
+    "enableLabRecorder": true,
+    "labRecorderExeEnvVar": "LABRECORDER_EXE_PATH",
+    "labRecorderExePath": "",
+    "labRecorderExeCandidates": [
+      "C:\\LabRecorder\\LabRecorder.exe"
+    ],
+    "labRecorderCfgPath": "C:\\LabRecorder\\sheeg_labrecorder.cfg",
+    "useLabRecorderConfig": true,
+    "rcsHost": "127.0.0.1",
+    "rcsPort": 22345
+  },
+  "scripts": {
+    "gameApp": "scripts\\pinball_game.py",
+    "gameLslBridge": "",
+    "lslProbe": "scripts\\lsl_probe.py",
+    "recorderController": "scripts\\recorder_controller.py",
+    "runLauncher": "scripts\\run_cognition_task.py",
+    "SheeG": "scripts\\merged_game.py",
+    "Dino": "scripts\\dino_task.py",
+    "P300": "scripts\\p300_task.py"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "status": {
+    "eeg_found": false,
+    "markers_found": true
+  },
+  "bridge_defaults": {
+    "stream_name": "MarkerStream",
+    "stream_type": "Markers",
+    "source_id": "godot_udp"
+  },
+  "required": {
+    "eeg": "type=EEG filtered to CGX/Cognionics",
+    "markers": "Markers"
+  },
+  "found": {
+    "eeg": [],
+    "markers": [
+      {
+        "name": "Markers",
+        "type": "Markers",
+        "source_id": "pinball_TEST01_TEST04_24604",
+        "channels": 1,
+        "sample_rate": 0.0
+      }
+    ]
+  }
+}
